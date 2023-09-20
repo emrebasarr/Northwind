@@ -1,0 +1,27 @@
+﻿@{
+    ViewData["Title"] = "Index";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+
+<table class="table table-hover" id="productTable">
+    <thead>
+        <tr>
+            <th>Product Id</th>
+            <th>Product Name</th>
+            <th>UnitPrice</th>
+            <th>Stock</th>
+            <th>Category</th>
+            <th>Supplier</th>
+        </tr>
+    </thead>
+    <tbody id="productTableBody">
+
+    </tbody>
+</table>
+
+
+@section Scripts{
+    <script src="/js/product.js"></script>
+    <script src="/js/cart.js"></script>
+}

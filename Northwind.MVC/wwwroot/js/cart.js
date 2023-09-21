@@ -61,7 +61,8 @@
             },
             type: "delete",
             success: function (data) {
-                fillCartTable(data)                
+                alert("Kart Silindi");
+                console.log(data)                
             },
             error: function (err) {
                 console.log(err);
@@ -71,7 +72,7 @@
 
     // Update İşlemi
     $("${val.id}").on("click", function (e) {
-        if (e.target.name = "removeitem") {
+        if (e.target.name = "cartquantity") {
             updateToCart(e.target.id);
         }
     })
@@ -82,9 +83,10 @@
             xhrFields: {
                 withCredentials: true
             },
-            type: "delete",
+            type: "put",
             success: function (data) {
-                fillCartTable(data)
+                alert("Kart Güncellendi");
+                console.log(data)
             },
             error: function (err) {
                 console.log(err);

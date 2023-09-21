@@ -8,6 +8,6 @@ namespace Northwind.API.Repositories
         void AddItem(CartDTO cartDTO);
         void DeleteItem(int id);
 
-        void UpdateItem(int id, CartDTO cartDTO);
+        public void UpdateItem(int id, short quantity);
     }
 }
